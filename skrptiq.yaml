@@ -1,0 +1,40 @@
+# --- Identity ---
+name: "brand-audit-flow"
+display_name: "Brand Audit Flow"
+description: "Competitive analysis, brand voice review, and positioning recommendations"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/brand-audit-flow"
+
+# --- Discovery (Hub) ---
+category: "marketing"
+tags:
+  - "brand"
+  - "competitive-analysis"
+  - "positioning"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+    - "openai-gpt4"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 2
+  prompts: 1
+  workflows: 1
+  services: 0
+  sources: 2
+  documents: 0
+  assets: 0
+  total: 6
