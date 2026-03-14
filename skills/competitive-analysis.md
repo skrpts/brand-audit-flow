@@ -5,7 +5,7 @@ title: Competitive Analysis
 description: "Researches and benchmarks competitor positioning, messaging, and tactics"
 tags: []
 connections:
-  - target: openai-gpt4
+  - target: llm-service
     type: runs_on
 ---
 

@@ -5,7 +5,7 @@ title: Brand Voice Matching
 description: "Ensures content aligns with established brand voice and tone guidelines"
 tags: [Production]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
   - target: brand-voice-guidelines
     type: references

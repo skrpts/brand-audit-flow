@@ -5,7 +5,7 @@ title: Competitor Report
 description: "Produces a structured competitive analysis report"
 tags: []
 connections:
-  - target: openai-gpt4
+  - target: llm-service
     type: runs_on
   - target: campaign-performance-benchmarks
     type: references
