@@ -3,7 +3,7 @@ type: workflow
 id: brand-audit-flow
 title: Brand Audit Flow
 description: "Competitive analysis, brand voice review, and positioning recommendations"
-tags: [Needs Review]
+tags: [Production]
 connections:
   - target: competitive-analysis
     type: uses
@@ -18,7 +18,7 @@ metadata:
 
 ## Overview
 
-This workflow conducts a comprehensive brand audit by analysing competitor positioning, reviewing brand voice consistency, and producing actionable recommendations for differentiation. It's designed for strategic planning sessions or periodic brand health checks.
+This workflow conducts a thorough brand audit by analysing competitor positioning, reviewing brand voice consistency, and producing actionable recommendations for differentiation. It's designed for strategic planning sessions or periodic brand health checks.
 
 ## Pipeline Stages
 
@@ -44,7 +44,7 @@ Invoke the **brand-voice-matching** skill to audit current content for consisten
 
 Invoke the **competitor-report** prompt to produce a structured report covering each competitor's positioning, messaging themes, channel presence, strengths, weaknesses, and recent activity. Concludes with white space opportunities and differentiation strategy.
 
-**Output:** Comprehensive competitive analysis report with strategic recommendations.
+**Output:** Detailed competitive analysis report with strategic recommendations.
 
 ## Error Handling
 
@@ -67,7 +67,7 @@ Invoke the **competitor-report** prompt to produce a structured report covering 
 |------|-------------|
 | Competitive matrix | Competitive matrix with positioning map and opportunity identification |
 | Brand voice consistency report | Brand voice consistency report with specific examples and recommended corrections |
-| Comprehensive competitive analysis report | Comprehensive competitive analysis report with strategic recommendations |
+| Detailed competitive analysis report | Detailed competitive analysis report with strategic recommendations |
 
 ## Setup
 

@@ -3,7 +3,7 @@ type: prompt
 id: competitor-report
 title: Competitor Report
 description: "Produces a structured competitive analysis report"
-tags: []
+tags: [Production]
 connections:
   - target: llm-service
     type: runs_on
@@ -11,9 +11,9 @@ connections:
     type: references
 ---
 
-Produce a competitive analysis report covering the following competitors in the {{industry}} space.
+Produce a competitive analysis report covering the following competitors in the {{input.market_context}} space.
 
-For each competitor:
+Using the competitive analysis from the previous stage, evaluate each competitor across:
 - Positioning and value proposition
 - Key messaging themes
 - Channel presence and estimated spend
@@ -26,4 +26,4 @@ Conclude with:
 - Recommended differentiation strategy
 
 ## Competitors
-{{competitor_list}}
+{{input.competitor_list}}
