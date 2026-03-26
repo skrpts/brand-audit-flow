@@ -11,9 +11,15 @@ connections:
     type: references
 ---
 
+### Inputs
+
+- **Competitive analysis:** {{steps.competitive-analysis.output}}
+- **Market context:** {{input.market_context}}
+- **Competitor list:** {{input.competitor_list}}
+
 Produce a competitive analysis report covering the following competitors in the {{input.market_context}} space.
 
-Using the competitive analysis from the previous stage, evaluate each competitor across:
+Using the competitive analysis above, evaluate each competitor across:
 - Positioning and value proposition
 - Key messaging themes
 - Channel presence and estimated spend
