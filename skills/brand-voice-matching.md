@@ -3,7 +3,7 @@ type: skill
 id: brand-voice-matching
 title: Brand Voice Matching
 description: "Ensures content aligns with established brand voice and tone guidelines"
-tags: [Production, communication:narrative, analysis:competitive]
+tags: [Production, Communication, Competitive]
 connections:
   - target: llm-service
     type: runs_on

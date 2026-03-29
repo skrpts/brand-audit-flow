@@ -3,7 +3,7 @@ type: workflow
 id: brand-audit-flow
 title: Brand Audit Flow
 description: "Competitive analysis, brand voice review, and positioning recommendations"
-tags: [Production, analysis:competitive, communication:narrative]
+tags: [Production, Communication, Competitive]
 connections:
   - target: competitive-analysis
     type: uses

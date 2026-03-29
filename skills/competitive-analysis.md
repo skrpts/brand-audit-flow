@@ -3,7 +3,7 @@ type: skill
 id: competitive-analysis
 title: Competitive Analysis
 description: "Researches and benchmarks competitor positioning, messaging, and tactics"
-tags: [Production, analysis:competitive, data:metrics]
+tags: [Production, Competitive, Metrics]
 connections:
   - target: llm-service
     type: runs_on
