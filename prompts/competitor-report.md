@@ -3,7 +3,7 @@ type: prompt
 id: competitor-report
 title: Competitor Report
 description: "Produces a structured competitive analysis report"
-tags: [Production]
+tags: [Production, analysis:competitive, communication:narrative]
 connections:
   - target: llm-service
     type: runs_on
