@@ -13,12 +13,11 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
-
   - target: audience-segmentation
+    type: uses
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
-    type: uses
 ---
 
 ## Overview
