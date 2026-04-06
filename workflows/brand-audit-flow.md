@@ -9,8 +9,6 @@ connections:
     type: uses
   - target: brand-voice-matching
     type: uses
-  - target: competitor-report
-    type: uses
   - target: llm-service
     type: runs_on
   - target: audience-segmentation
