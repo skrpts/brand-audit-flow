@@ -13,7 +13,7 @@ connections:
 
 ### Inputs
 
-- **Competitive analysis:** {{steps.competitive-analysis.output}}
+- **Competitive analysis:** {{steps.Competitive Analysis.output}}
 - **Market context:** {{input.market_context}}
 - **Competitor list:** {{input.competitor_list}}
 
