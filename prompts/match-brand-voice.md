@@ -8,7 +8,7 @@ inputs:
   brand_guidelines:
     label: "Brand Guidelines"
     description: "Your brand voice, tone, and style guidelines"
-    example: "Professional but approachable. Use "we" not "I". Avoid exclamation marks."
+    example: "Professional but approachable. Use 'we' not 'I'. Avoid exclamation marks."
     required: true
     type: text
 connections:
