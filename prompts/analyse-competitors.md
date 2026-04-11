@@ -4,6 +4,13 @@ id: analyse-competitors
 title: "Analyse Competitors"
 description: "Researches competitor positioning, messaging, and tactical approach"
 tags: [Production, Marketing, Competitive]
+inputs:
+  your_product:
+    label: "Your Product"
+    description: "Your product name and brief description"
+    example: "Skrptiq — AI workflow builder for structured content production"
+    required: true
+    type: text
 connections:
   - target: competitive-analysis
     type: derived_from

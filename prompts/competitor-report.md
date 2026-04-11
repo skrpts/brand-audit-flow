@@ -4,6 +4,19 @@ id: competitor-report
 title: Competitor Report
 description: "Produces a structured competitive analysis report"
 tags: [Production, Competitive, Communication]
+inputs:
+  market_context:
+    label: "Market Context"
+    description: "Market information including target segments, competitors, and positioning"
+    example: "Enterprise project management tools. Main competitors: Asana, Monday, Jira."
+    required: true
+    type: text
+  competitor_list:
+    label: "Competitor List"
+    description: "List of competitors to analyse"
+    example: "Notion, Coda, Slite, Craft, Obsidian"
+    required: true
+    type: text
 connections:
   - target: llm-service
     type: runs_on

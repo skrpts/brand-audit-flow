@@ -4,6 +4,13 @@ id: segment-audience
 title: "Segment Audience"
 description: "Divides target market into actionable segments based on behaviour and demographics"
 tags: [Production, Marketing]
+inputs:
+  market_context:
+    label: "Market Context"
+    description: "Market information including target segments, competitors, and positioning"
+    example: "Enterprise project management tools. Main competitors: Asana, Monday, Jira."
+    required: true
+    type: text
 connections:
   - target: audience-segmentation
     type: derived_from

@@ -4,6 +4,13 @@ id: match-brand-voice
 title: "Match Brand Voice"
 description: "Adjusts content to align with established brand voice guidelines"
 tags: [Production, Marketing, Writing]
+inputs:
+  brand_guidelines:
+    label: "Brand Guidelines"
+    description: "Your brand voice, tone, and style guidelines"
+    example: "Professional but approachable. Use "we" not "I". Avoid exclamation marks."
+    required: true
+    type: text
 connections:
   - target: brand-voice-matching
     type: derived_from
