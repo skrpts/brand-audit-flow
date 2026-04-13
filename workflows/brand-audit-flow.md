@@ -21,10 +21,8 @@ execution:
     step_type: "synthesis"
   - skill: "brand-voice-matching"
     step_type: "content"
-    input_from: "competitive-analysis"
   - skill: "audience-segmentation"
     step_type: "synthesis"
-    input_from: "brand-voice-matching"
 ---
 
 ## Overview
