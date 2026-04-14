@@ -16,6 +16,11 @@ connections:
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
+output_step: "audience-segmentation"
+composite_steps:
+  - "competitive-analysis"
+  - "brand-voice-matching"
+  - "audience-segmentation"
 execution:
   - skill: "competitive-analysis"
     step_type: "synthesis"
