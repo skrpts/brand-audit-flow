@@ -4,6 +4,12 @@ id: competitive-analysis
 title: Competitive Analysis
 description: "Researches and benchmarks competitor positioning, messaging, and tactics"
 tags: [Production, Competitive, Metrics]
+context_params:
+  your_product:
+    label: "Your Product"
+    description: "Your product name and brief description for competitive comparison"
+    default: ""
+    required: true
 connections:
   - target: llm-service
     type: runs_on

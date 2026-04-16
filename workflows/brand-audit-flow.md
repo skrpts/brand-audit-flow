@@ -24,8 +24,12 @@ composite_steps:
 execution:
   - skill: "competitive-analysis"
     step_type: "synthesis"
+    context:
+      your_product: ""
   - skill: "brand-voice-matching"
     step_type: "content"
+    context:
+      brand_guidelines: ""
   - skill: "audience-segmentation"
     step_type: "synthesis"
 ---

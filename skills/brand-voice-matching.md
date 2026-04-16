@@ -4,6 +4,12 @@ id: brand-voice-matching
 title: Brand Voice Matching
 description: "Ensures content aligns with established brand voice and tone guidelines"
 tags: [Production, Communication, Competitive]
+context_params:
+  brand_guidelines:
+    label: "Brand Guidelines"
+    description: "Brand voice, tone, and style guidelines"
+    default: ""
+    required: true
 connections:
   - target: llm-service
     type: runs_on
