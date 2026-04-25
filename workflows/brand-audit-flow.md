@@ -9,6 +9,10 @@ connections:
     type: uses
   - target: brand-voice-matching
     type: uses
+  - target: language-polish
+    type: uses
+  - target: consistency-check
+    type: uses
   - target: llm-service
     type: runs_on
   - target: audience-segmentation
@@ -16,7 +20,7 @@ connections:
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
-output_step: "audience-segmentation"
+output_step: "language-polish"
 composite_steps:
   - "competitive-analysis"
   - "brand-voice-matching"
@@ -82,7 +86,13 @@ Invoke the **competitor-report** prompt to produce a structured report covering 
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+|------|----------
+  - skill: "language-polish"
+    step_type: "content"
+  - parallel:
+    - skill: "consistency-check"
+      step_type: "review"
+---|
 | Competitive matrix | Competitive matrix with positioning map and opportunity identification |
 | Brand voice consistency report | Brand voice consistency report with specific examples and recommended corrections |
 | Detailed competitive analysis report | Detailed competitive analysis report with strategic recommendations |
