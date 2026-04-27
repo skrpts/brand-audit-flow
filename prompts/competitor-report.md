@@ -18,6 +18,8 @@ inputs:
     required: true
     type: text
 connections:
+  - target: competitive-analysis
+    type: derived_from
   - target: llm-service
     type: runs_on
   - target: campaign-performance-benchmarks

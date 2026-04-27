@@ -27,14 +27,17 @@ composite_steps:
   - "audience-segmentation"
 execution:
   - skill: "competitive-analysis"
+    prompt: "analyse-competitors"
     step_type: "synthesis"
     context:
       your_product: ""
   - skill: "brand-voice-matching"
+    prompt: "match-brand-voice"
     step_type: "content"
     context:
       brand_guidelines: ""
   - skill: "audience-segmentation"
+    prompt: "segment-audience"
     step_type: "synthesis"
 ---
 
