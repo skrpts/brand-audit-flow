@@ -23,25 +23,6 @@ inputs:
     example: "B2B project management software for mid-market"
     required: false
     type: text
-inputs:
-  brand_name:
-    label: "Brand Name"
-    description: "Your brand or company name"
-    example: "Acme Software"
-    required: true
-    type: text
-  competitors:
-    label: "Competitors"
-    description: "Key competitors to analyse — names or URLs"
-    example: "Competitor A, Competitor B, Competitor C"
-    required: true
-    type: text
-  market_segment:
-    label: "Market Segment"
-    description: "The market you compete in"
-    example: "B2B project management software for mid-market"
-    required: false
-    type: text
 connections:
   - target: competitive-analysis
     type: derived_from
@@ -59,12 +40,6 @@ Drives the competitive analysis skill.
 You are a competitive intelligence analyst. Analyse the competitors described below.
 
 ### Competitor Information
-
-**Brand:** {{input.brand_name}}
-**Competitors:** {{input.competitors}}
-**Market:** {{input.market_segment}}
-
-### Context
 
 **Brand:** {{input.brand_name}}
 **Competitors:** {{input.competitors}}
