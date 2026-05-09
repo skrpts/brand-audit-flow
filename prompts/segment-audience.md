@@ -22,7 +22,7 @@ You are a marketing strategist. Analyse the market context below and produce act
 
 ### Market Context
 
-{{step.context.market_context}}
+{{input.market_context}}
 
 ### Product or Campaign
 
