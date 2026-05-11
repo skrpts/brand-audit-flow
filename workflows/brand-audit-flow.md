@@ -39,6 +39,18 @@ execution:
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
+  - skill: "consistency-check"
+    step_type: "review"
+    prompt: "check-consistency"
+    context:
+      voice_profile: ""
+      consistency_strictness: ""
+  - skill: "language-polish"
+    step_type: "content"
+    prompt: "polish-language"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
 ---
 
 ## Overview
@@ -89,13 +101,7 @@ Invoke the **competitor-report** prompt to produce a structured report covering 
 ## Outputs
 
 | Name | Description |
-|------|----------
-  - skill: "language-polish"
-    step_type: "content"
-  - parallel:
-    - skill: "consistency-check"
-      step_type: "review"
----|
+|------|-------------|
 | Competitive matrix | Competitive matrix with positioning map and opportunity identification |
 | Brand voice consistency report | Brand voice consistency report with specific examples and recommended corrections |
 | Detailed competitive analysis report | Detailed competitive analysis report with strategic recommendations |
