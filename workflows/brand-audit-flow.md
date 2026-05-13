@@ -30,12 +30,12 @@ execution:
     prompt: "analyse-competitors"
     step_type: "synthesis"
     context:
-      your_product: ""
+      your_product: "Not specified"
   - skill: "brand-voice-matching"
     prompt: "match-brand-voice"
     step_type: "content"
     context:
-      brand_guidelines: ""
+      brand_guidelines: "No specific brand guidelines"
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
@@ -43,14 +43,14 @@ execution:
     step_type: "review"
     prompt: "check-consistency"
     context:
-      voice_profile: ""
-      consistency_strictness: ""
+      voice_profile: "Neutral professional tone"
+      consistency_strictness: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
