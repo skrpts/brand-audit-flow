@@ -39,6 +39,8 @@ execution:
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
+    context:
+      market_context: "No additional market context"
   - skill: "consistency-check"
     step_type: "review"
     prompt: "check-consistency"
