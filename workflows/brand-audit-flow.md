@@ -29,27 +29,32 @@ execution:
   - skill: "competitive-analysis"
     prompt: "analyse-competitors"
     step_type: "synthesis"
+    output: { name: "competitor_analysis", type: "text" }
     context:
       your_product: "Not specified"
   - skill: "brand-voice-matching"
     prompt: "match-brand-voice"
     step_type: "content"
+    output: { name: "voice_match", type: "text" }
     context:
       brand_guidelines: "No specific brand guidelines"
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
+    output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
   - skill: "consistency-check"
     step_type: "review"
     prompt: "check-consistency"
+    output: { name: "consistency_verdict", type: "decision" }
     context:
       voice_profile: "Neutral professional tone"
       consistency_strictness: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
+    output: { name: "polished_audit", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"

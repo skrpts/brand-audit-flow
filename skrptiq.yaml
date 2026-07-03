@@ -3,7 +3,7 @@ id: "002e8736-06b4-4047-bee8-dfafcaccaf6c"
 name: "brand-audit-flow"
 display_name: "Brand Audit Flow"
 description: "Competitive analysis, brand voice review, and positioning recommendations"
-version: "1.1.25"
+version: "1.1.26"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -85,3 +85,17 @@ contents:
   documents: 0
   assets: 0
   total: 4
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T10:59:01.385Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/brand-audit-flow/security"

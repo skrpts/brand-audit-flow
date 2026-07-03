@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.26
+GH#745 — declare per-step `output: {name, type}` on every execution step (competitor_analysis/text, voice_match/text, audience_segments/list, consistency_verdict/decision, polished_audit/text). Lights up the #744 rich flow-map. Content-only; no bindings or logic changes.
+
 ## v1.1.25
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 11 inline shared-content files and declare 11 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
 
