@@ -62,7 +62,7 @@ execution:
 
 ## Overview
 
-This workflow conducts a thorough brand audit by analysing competitor positioning, reviewing brand voice consistency, and producing actionable recommendations for differentiation. It's designed for strategic planning sessions or periodic brand health checks.
+This workflow conducts a thorough brand audit by analyzing competitor positioning, reviewing brand voice consistency, and producing actionable recommendations for differentiation. It's designed for strategic planning sessions or periodic brand health checks.
 
 ## Pipeline Stages
 
@@ -94,7 +94,7 @@ Invoke the **competitor-report** prompt to produce a structured report covering 
 
 - If competitor information is insufficient, supplement with publicly available marketing materials
 - If brand voice has drifted significantly, flag for a brand strategy workshop rather than just correcting copy
-- If competitive landscape reveals a major positioning conflict, escalate to leadership before finalising recommendations
+- If competitive landscape reveals a major positioning conflict, escalate to leadership before finalizing recommendations
 
 ## Inputs
 
@@ -118,7 +118,7 @@ Invoke the **competitor-report** prompt to produce a structured report covering 
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

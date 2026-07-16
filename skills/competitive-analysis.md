@@ -17,7 +17,7 @@ connections:
 
 ## Capability
 
-Analyses competitor marketing activities including positioning, messaging, channels, pricing, and content strategy to identify gaps and opportunities.
+Analyzes competitor marketing activities including positioning, messaging, channels, pricing, and content strategy to identify gaps and opportunities.
 
 ## When to Use
 

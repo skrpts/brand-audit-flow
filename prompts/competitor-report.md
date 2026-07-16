@@ -13,7 +13,7 @@ inputs:
     type: text
   competitor_list:
     label: "Competitor List"
-    description: "List of competitors to analyse"
+    description: "List of competitors to analyze"
     example: "Notion, Coda, Slite, Craft, Obsidian"
     required: true
     type: text
