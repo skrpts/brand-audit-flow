@@ -17,6 +17,19 @@ inputs:
     example: "Notion, Coda, Slite, Craft, Obsidian"
     required: true
     type: text
+context_params:
+  competitor_analysis:
+    label: "Competitor Analysis"
+    description: "Upstream competitor analysis — positioning, messaging, channels, and opportunities."
+    required: false
+  voice_match:
+    label: "Brand Voice Match"
+    description: "Upstream brand-voice consistency review — deviations and recommended corrections."
+    required: false
+  audience_segments:
+    label: "Audience Segments"
+    description: "Upstream audience segments — target segments feeding positioning."
+    required: false
 connections:
   - target: competitive-analysis
     type: derived_from
@@ -28,7 +41,9 @@ connections:
 
 ### Inputs
 
-- **Competitive analysis:** {{steps.Competitive Analysis.output}}
+- **Competitor analysis:** {{step.context.competitor_analysis}}
+- **Brand voice match:** {{step.context.voice_match}}
+- **Audience segments:** {{step.context.audience_segments}}
 - **Market context:** {{input.market_context}}
 - **Competitor list:** {{input.competitor_list}}
 
