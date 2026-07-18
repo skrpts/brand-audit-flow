@@ -9,8 +9,6 @@ connections:
     type: uses
   - target: brand-voice-matching
     type: uses
-  - target: competitor-reporting
-    type: uses
   - target: language-polish
     type: uses
   - target: consistency-check
@@ -27,7 +25,6 @@ composite_steps:
   - "competitive-analysis"
   - "brand-voice-matching"
   - "audience-segmentation"
-  - "competitor-reporting"
 execution:
   - skill: "competitive-analysis"
     prompt: "analyse-competitors"
@@ -54,20 +51,6 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       consistency_strictness: "Standard"
-  - skill: "competitor-reporting"
-    prompt: "competitor-report"
-    step_type: "content"
-    output: { name: "audit_report", type: "text" }
-    bindings:
-      competitor_analysis:
-        from_step: "Competitive Analysis"
-        field: output
-      voice_match:
-        from_step: "Brand Voice Matching"
-        field: output
-      audience_segments:
-        from_step: "Audience Segmentation"
-        field: output
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
@@ -75,10 +58,6 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
-    bindings:
-      source:
-        from_step: "Competitor Report Builder"
-        field: output
 ---
 
 ## Overview
