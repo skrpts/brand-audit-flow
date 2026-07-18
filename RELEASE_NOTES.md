@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.28
+GH#863 Wave 1 (K-045 intent/output-mismatch) — the `competitor-report` deliverable was never invoked by the workflow. Wire it as an execution step: add backing skill `competitor-reporting` (Competitor Report Builder), run competitor-report as the last content step before language-polish, bind its inputs (competitor analysis, brand-voice match, audience segments) via explicit `from_step`, and bind `language-polish` `source` from the report. Convert the prompt's positional `{{steps.*.output}}` ref to `context_params` + `{{step.context.*}}`. Re-pin polish-language to v1.0.6.
+
 ## v1.1.27
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 
