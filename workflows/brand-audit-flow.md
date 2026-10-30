@@ -19,6 +19,19 @@ connections:
     type: runs_on
   - target: audience-segmentation
     type: uses
+inputs:
+  product_or_campaign:
+    label: "Product or Campaign"
+    description: "The product or campaign the audience is being segmented for"
+    example: "Our project-management tool, repositioning towards small creative agencies"
+    required: true
+    type: text
+  competitor_information:
+    label: "Competitor Information"
+    description: "The competitors to analyse, and what is known about their positioning and messaging"
+    example: "Asana, Monday.com, ClickUp — their pricing pages, recent launches and positioning claims"
+    required: true
+    type: text
 metadata:
   estimated_duration: "15-30 minutes"
   trigger: manual
@@ -35,18 +48,28 @@ execution:
     output: { name: "competitor_analysis", type: "text" }
     context:
       your_product: "Not specified"
+    bindings:
+      source:
+        from_input: "competitor_information"
   - skill: "brand-voice-matching"
     prompt: "match-brand-voice"
     step_type: "content"
     output: { name: "voice_match", type: "text" }
     context:
       brand_guidelines: "No specific brand guidelines"
+    bindings:
+      source:
+        from_step: "Competitive Analysis"
+        field: output
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
     output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
+    bindings:
+      source:
+        from_input: "product_or_campaign"
   - skill: "consistency-check"
     step_type: "review"
     prompt: "check-consistency"
@@ -54,6 +77,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       consistency_strictness: "Standard"
+    bindings:
+      source:
+        from_step: "Audience Segmentation"
+        field: output
   - skill: "competitor-reporting"
     prompt: "competitor-report"
     step_type: "content"

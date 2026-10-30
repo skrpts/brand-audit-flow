@@ -1,5 +1,12 @@
 # Release Notes
 
+## v1.1.29
+GH#1100 consumer wave batch 6 — declare the data flow these steps were resolving positionally. 4 binding(s) added.
+
+Two slots cannot be filled by any step in this flow and now take declared inputs: `analyse-competitors` ("Competitor Information") sits at position 1 with nothing upstream, and `segment-audience` ("Product or Campaign") had only a competitor analysis and a voice match available. New required inputs `competitor_information` and `product_or_campaign`.
+
+**This flow now requires input it did not require before.** That is the fix: previously the user supplied nothing for these slots and the step silently received whatever the binding pointed at.
+
 ## v1.1.28
 GH#863 Wave 1 (K-045 intent/output-mismatch) — the `competitor-report` deliverable was never invoked by the workflow. Wire it as an execution step: add backing skill `competitor-reporting` (Competitor Report Builder), run competitor-report as the last content step before language-polish, bind its inputs (competitor analysis, brand-voice match, audience segments) via explicit `from_step`, and bind `language-polish` `source` from the report. Convert the prompt's positional `{{steps.*.output}}` ref to `context_params` + `{{step.context.*}}`. Re-pin polish-language to v1.0.6.
 
